@@ -1,0 +1,162 @@
+/* 1099 Quarterly Tax Estimator — legal & support pages.
+   Uygulamanın kendi paleti: mürekkep mavisi, kâğıt zemin, pirinç vurgu. */
+
+:root {
+  --ink: #2c4a6e;
+  --ink-deep: #1c2430;
+  --paper: #f4f4f1;
+  --surface: #ffffff;
+  --brass: #6f5410;
+  --muted: #5b6472;
+  --line: #dcdad2;
+  --max: 720px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0 20px 72px;
+  background: var(--paper);
+  color: var(--ink-deep);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+.wrap { max-width: var(--max); margin: 0 auto; }
+
+header.hero {
+  text-align: center;
+  padding: 56px 0 8px;
+}
+
+header.hero img.icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  box-shadow: 0 8px 24px rgba(28, 36, 48, 0.18);
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 24px 0 8px;
+}
+
+.tagline {
+  font-size: 19px;
+  color: var(--muted);
+  margin: 0 auto 8px;
+  max-width: 34em;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+h2 {
+  font-size: 21px;
+  letter-spacing: -0.01em;
+  margin: 40px 0 10px;
+  padding-top: 4px;
+}
+
+h3 {
+  font-size: 17px;
+  margin: 28px 0 6px;
+}
+
+p, li { color: #26303d; }
+
+a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { color: #16324f; }
+
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin: 20px 0;
+}
+
+.card h3 { margin-top: 0; }
+
+.lede {
+  font-size: 18px;
+  background: var(--surface);
+  border-left: 4px solid var(--ink);
+  border-radius: 0 12px 12px 0;
+  padding: 16px 20px;
+  margin: 28px 0;
+}
+
+.shots {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 36px 0 8px;
+}
+
+.shots figure { margin: 0; max-width: 260px; }
+
+.shots img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(28, 36, 48, 0.16);
+}
+
+.shots figcaption {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.nav {
+  text-align: center;
+  margin: 40px 0 0;
+  font-size: 16px;
+}
+
+.nav a { margin: 0 10px; white-space: nowrap; }
+
+footer {
+  border-top: 1px solid var(--line);
+  margin-top: 56px;
+  padding-top: 22px;
+  color: var(--muted);
+  font-size: 14.5px;
+  text-align: center;
+}
+
+footer p { margin: 6px 0; }
+
+.disclaimer {
+  font-size: 14.5px;
+  color: var(--muted);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #141a22;
+    --surface: #1c242e;
+    --ink-deep: #eceef0;
+    --ink: #9cbbdd;
+    --brass: #e0b354;
+    --muted: #a3adba;
+    --line: #313b47;
+  }
+  p, li { color: #dfe3e8; }
+  header.hero img.icon { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); }
+  .shots img { box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); }
+}
